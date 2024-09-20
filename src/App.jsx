@@ -8,7 +8,10 @@ import Chat from './components/Chat';
 import Resource from './components/resources';
 import Test from './components/Test';
 import Tools from './components/tools';
+import Dashboard from './components/Dashboard';
 import Mentorship from './components/Mentorship';
+import Chatbot from './components/chat-comp/Chatbot';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,7 +25,10 @@ function App() {
         <Route path='/tests' element={<Test/>} />
         <Route path='/tools' element={<Tools/>} />
         <Route path='/mentor' element={<Mentorship/>} />
+        <Route path='/dashboard' element={<Dashboard/>} />
       </Routes>
+      <Chatbot />
+      <Footer />
     </Router>
   );
 }
